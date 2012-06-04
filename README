@@ -1,6 +1,9 @@
 Ruby Email Parser
 
 ---------------
+UPDATE: 2012-06-04
+	Created seperate file for class, included test email
+---------------
 
 Made a parser in php, now made a parser in ruby
 
