@@ -13,10 +13,10 @@ class Parse
 		sections = text.split(boundary)
 
 		# Clean out all the newlines and whitespace so that we'll have all 'Something: Other stuff'
-		$header = sections[0].strip.gsub(/\n\s+/, " ")
+		header = sections[0].strip.gsub(/\n\s+/, " ")
 
 		# Clean off the 'Content type:' line and the dashes for a nice output
-		$content = sections[1].strip.gsub(/(^C)(.+)/, "").strip.chomp('--')
+		content = sections[1].strip.gsub(/(^C)(.+)/, "").strip.chomp('--')
 
 		# Method for the header
 		def parse_head (object, section)
@@ -31,9 +31,9 @@ class Parse
 			puts lines.join.strip
 		end
 
-		parse_head($wants, $header)
+		parse_head($wants, header)
 		puts "________________________________________"
 		puts
-		puts $content
+		puts content
 	end
 end
