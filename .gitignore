@@ -2,5 +2,5 @@
 *.odt
 *.pdf
 *.save
-*/
+*ignore/
 *test.rb
