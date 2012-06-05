@@ -1,4 +1,12 @@
 Ruby Email Parser
+---------------
+UPDATE: 2012-06-05
+	Crafted main file to be clean and sleak, with as little work
+		 being done there as needed.
+	Updated classes file to call methods with and without arguments
+		also minmizing the need to use object variables
+		by calling methods within methods.
+	Added Improvements section to README
 
 ---------------
 UPDATE: 2012-06-04
@@ -8,3 +16,9 @@ UPDATE: 2012-06-04
 Made a parser in php, now made a parser in ruby
 
 Runs from the command line.
+
+
+_________________________________________________________________
+IMPROVEMENTS TO BE MADE:
+
+	* Create option for multi-part content

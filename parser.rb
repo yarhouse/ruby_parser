@@ -4,8 +4,8 @@ require '/home/aaron/ruby/parser/test_classes.rb'
 lines = File.readlines(ARGV[0])
 text = lines.join
 
-# Array of the info you want from the email head
-wants = ["date", "to", "from", "cc", "bcc", "subject", ]
+# Array of header info wanted from email, in order
+wants = ["date", "to", "from", "cc", "bcc", "subject" ]
 
 email = Parse.new(text, wants)
 
