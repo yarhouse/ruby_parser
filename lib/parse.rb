@@ -35,8 +35,8 @@ class Parse
 	end
 	def parse_content(section)
 
-		# Remove 'Content type:' and characters to \n
-		@content = section.strip.gsub(/(^Content-Type:)(.+)/, "").strip.chomp('--')
+		# Remove 'Content' type lines
+		@content = section.gsub(/(^Content-)(.+)(:)(.+)(\n)/, "").chomp('--').strip
 	end
 	def put_content # Format for terminal
 		puts "\n"+@labels
