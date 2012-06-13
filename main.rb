@@ -5,7 +5,7 @@ lines = File.readlines(ARGV[0])
 text = lines.join
 
 # Array of header info wanted from email, in order
-wants = ["date", "to", "from", "cc", "bcc", "subject" ]
+wants = %w{date to from cc bcc subject}
 
 email = Parse.new(text, wants)
 
